@@ -22,7 +22,7 @@ export default function List(props) {
 
    function getMessageComponent(currentId) {
    const activeMessage =  messages.filter( function (message) {
-    return message.mId == currentId
+    return currentId = message.mId
       });
     return <div className="col-md-7"><MessageBox message={activeMessage} /></div>
   }
