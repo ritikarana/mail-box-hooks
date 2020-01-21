@@ -1,0 +1,221 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #9d9fa3;
+  min-height: 100vh;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  font-size: 16px;
+}
+body{
+  background: #f3f2f1;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.navigation-list {
+  margin: 16% 0%;
+  cursor: pointer;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.row {
+  width: 100%;
+  text-align: left;
+}
+.HeadRow {
+  width: 100%;
+  text-align: left;
+  background-color: black;
+  color: white;
+  padding: 18px;
+  font-size: 25px;
+}
+
+span.icon {
+  padding-right: 14px;
+  align-items: center;
+}
+
+.nav-title {
+  height: 40px;
+  padding: 0 23px;
+}
+
+.col-md-2 {
+  float: left;
+  width: 12%;
+  border-right: 1px solid #b3b1b1e8;
+  height: 1200px;
+}
+
+.col-md-3 {
+  float: left;
+  width: 23%;
+  border-right: 1px solid #b3b1b1e8;
+  height: 1200px;
+}
+
+.col-md-7 {
+  float: left;
+  padding: 0px 17px;
+  width: 53%;
+  height: 1200px;
+}
+
+.message-box {
+  background: white;
+  padding: 13px;
+  margin: 46px 0;
+  border: 1px solid #d0d0d0;
+}
+
+.message-box p {
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.nav-inner-side-bar li {
+  padding: 7px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  -ms-flex-align: center;
+  height: 40px;
+  padding: 0 28px;
+  align-items: center;
+}
+
+.nav-inner-side-bar li.active {
+  background: #a9bfc8;
+}
+
+.nav-inner-side-bar li.inactive {
+  background: transparent;
+}
+
+.message-list li {
+  align-items: center;
+  padding: 10px 0;
+}
+
+.message-list li.inactive {
+  background: white;
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: transparent;
+}
+.msg-box {
+  padding: 10px;
+  height: 40px;
+}
+.filter {
+  color: #246076;
+  font-size: 15px;
+  font-weight: 500;
+  float: right;
+  cursor: pointer;
+}
+
+.msg-box-title {
+  font-size: 20px;
+  float: left;
+  width: 20%;
+}
+span.trash {
+  float: right;
+  cursor: pointer;
+}
+span.flag {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.message-list li.active {
+  background: #a9bfc8;
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: transparent;
+}
+.subject {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 10px;
+}
+
+.small-summery {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.msg-box-filter ul.inactive {
+  max-height: 0;
+  overflow-y: hidden;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out;
+  -o-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+  position: relative;
+  top: 20px;
+  float: right;
+  background: white;
+  width: 39%;
+  left: 17%;
+  padding: 15px;
+  display:none;
+}
+.msg-box-filter ul.active {
+  overflow-y: hidden;
+  max-height: 500px;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  position: relative;
+  top: 20px;
+  float: right;
+  background: white;
+  width: 39%;
+  left: 17%;
+  padding: 15px;
+}
+span.count {
+  margin-left: 5%;
+}
+.msg-box-filter li {
+  padding: 7px 10px;
+  border-bottom: 1px solid #b3b1b1e8;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
